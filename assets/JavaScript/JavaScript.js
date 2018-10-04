@@ -1,6 +1,6 @@
 
-var queryURL = "https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=judX8VKcSFM3iuNPxRt4Z6oUUwIZ2f7OAII8D5wp&location=Denver+CO";
-
+/*var queryURL = "https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=judX8VKcSFM3iuNPxRt4Z6oUUwIZ2f7OAII8D5wp&location=Denver+CO";*/
+var queryURL = "https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=8eBRMg4xQnoq9EGdutObYDPBxTm4k0zfwHdJy91s&location=Denver+CO";
 $.ajax({
   url: queryURL,
   method: "GET"
