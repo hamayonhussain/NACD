@@ -5,7 +5,7 @@
         padding-top: 150px;
         padding-bottom: 75px;
         color: aliceblue;
-        
+        border-style: solid;
      
 }
 
@@ -14,5 +14,13 @@
 
 padding-top: 50px;
 
+
+}
+
+#formone{
+
+           
+           float: left;
+           
 
 }
