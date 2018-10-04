@@ -1,13 +1,12 @@
-
-/*var queryURL = "https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=judX8VKcSFM3iuNPxRt4Z6oUUwIZ2f7OAII8D5wp&location=Denver+CO";*/
-var queryURL = "https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=8eBRMg4xQnoq9EGdutObYDPBxTm4k0zfwHdJy91s&location=Denver+CO";
+var stateChosen = 
+var queryURL = "https://api.usa.gov/crime/fbi/sapi/api/states/" + stateChosen + "?api_key=yymOL8SXIzpBwPuh92Fgp8vBqFAEhoHaVYVB3HHL";
 $.ajax({
   url: queryURL,
   method: "GET"
 }).then(function(res) {
   console.log(res);
 });
-
+console.log(queryURL);
 /*Adding Google Map*/
 
 function initMap() {
