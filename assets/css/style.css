@@ -1,18 +1,18 @@
-.navbar-brand{
+.navbar-brand {
 
-   margin-bottom: 25px;
-   margin: 45px;
-    
+    margin-bottom: 25px;
+    margin: 45px;
+
 }
 
-.container-fluid-one{
+.container-fluid-one {
 
     margin: 50px;
     text-align: center;
-    
+
 }
 
-.container-fluid-two{
+.container-fluid-two {
 
     margin: 50px;
     text-align: center;
@@ -29,7 +29,7 @@
 }
 
 
-.container-fluid-four{
+.container-fluid-four {
 
     margin: 50px;
     text-align: center;
@@ -37,7 +37,7 @@
     padding: 50px;
 }
 
-.googlemaps{
+.googlemaps {
     margin: 25px;
     text-align: center;
     margin-top: 25px;
@@ -50,6 +50,3 @@
     margin-top: 25px;
     padding: 25px;
 }
-
-
-
