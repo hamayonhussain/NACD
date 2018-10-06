@@ -6,9 +6,16 @@ var queryURL = "https://api.usa.gov/crime/fbi/sapi/api/agencies/byStateAbbr/TX?a
 $.ajax({
   url: queryURL,
   method: "GET"
-}).then(function(res) {
-  console.log(res);
+}).then(function(Response) {
+  console.log(Response);
 });
+  
+var county = results.name_county;
+var ori = results.ori;
+console.log(county);
+console.log(ori);
+
+
 
 /*Adding Google Map*/
 function initMap() {
