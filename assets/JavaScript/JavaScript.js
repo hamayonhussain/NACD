@@ -1,4 +1,3 @@
-
 //This is the FBI API.
 
 var queryURL = "https://api.usa.gov/crime/fbi/sapi/api/agencies/byStateAbbr/TX?api_key=judX8VKcSFM3iuNPxRt4Z6oUUwIZ2f7OAII8D5wp";
@@ -6,42 +5,55 @@ var queryURL = "https://api.usa.gov/crime/fbi/sapi/api/agencies/byStateAbbr/TX?a
 $.ajax({
   url: queryURL,
   method: "GET"
-}).then(function(Response) {
+}).then(function (Response) {
   console.log(Response);
 });
-  
-var county = results.name_county;
-var ori = results.ori;
-console.log(county);
-console.log(ori);
+
 
 
 
 /*Adding Google Map*/
 function initMap() {
 
-    // load the map
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 38, lng: -95},
-      zoom: 5,
-      styles: mapStyle
-    });
+  // load the map
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {
+      lat: 38,
+      lng: -95
+    },
+    zoom: 5,
+    styles: mapStyle
+  });
 
-    var mapStyle = [{
-      'featureType': 'all',
-      'elementType': 'all',
-      'stylers': [{'visibility': 'off'}]
+  var mapStyle = [{
+    'featureType': 'all',
+    'elementType': 'all',
+    'stylers': [{
+      'visibility': 'off'
+    }]
+  }, {
+    'featureType': 'landscape',
+    'elementType': 'geometry',
+    'stylers': [{
+      'visibility': 'on'
     }, {
-      'featureType': 'landscape',
-      'elementType': 'geometry',
-      'stylers': [{'visibility': 'on'}, {'color': '#fcfcfc'}]
+      'color': '#fcfcfc'
+    }]
+  }, {
+    'featureType': 'water',
+    'elementType': 'labels',
+    'stylers': [{
+      'visibility': 'off'
+    }]
+  }, {
+    'featureType': 'water',
+    'elementType': 'geometry',
+    'stylers': [{
+      'visibility': 'on'
     }, {
-      'featureType': 'water',
-      'elementType': 'labels',
-      'stylers': [{'visibility': 'off'}]
+      'hue': '#5f94ff'
     }, {
-      'featureType': 'water',
-      'elementType': 'geometry',
-      'stylers': [{'visibility': 'on'}, {'hue': '#5f94ff'}, {'lightness': 60}]
-    }];
-  }
+      'lightness': 60
+    }]
+  }];
+}
