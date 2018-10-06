@@ -3,6 +3,8 @@
 
 var queryURL = "https://api.usa.gov/crime/fbi/sapi/api/agencies/byStateAbbr/TX?api_key=judX8VKcSFM3iuNPxRt4Z6oUUwIZ2f7OAII8D5wp";
 
+// ajax call
+
 $.ajax({
   url: queryURL,
   method: "GET"
@@ -19,7 +21,7 @@ function initMap() {
       zoom: 5,
       styles: mapStyle
     });
-
+//objects
     var mapStyle = [{
       'featureType': 'all',
       'elementType': 'all',
