@@ -45,14 +45,12 @@
 }
 
 .form {
-    margin: 25px;
+    margin: 0, 0, 0, 0px;
     text-align: center;
     margin-top: 25px;
     padding: 25px;
-<<<<<<< HEAD
 }
-=======
-}
+
 
 
 .container .card{
@@ -64,11 +62,11 @@
 
 footer {
 
-    margin-top: 275px;
+    margin-top: 350px;
+    padding: 75px;
     
 }
 
 
 
 
->>>>>>> f7864628be2543f1c0549041ccae16c6227b05bc
