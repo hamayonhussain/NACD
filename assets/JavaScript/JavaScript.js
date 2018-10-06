@@ -1,4 +1,4 @@
-var stateChosen = 
+/*var stateChosen = */
 var queryURL = "https://api.usa.gov/crime/fbi/sapi/api/states/" + stateChosen + "?api_key=yymOL8SXIzpBwPuh92Fgp8vBqFAEhoHaVYVB3HHL";
 $.ajax({
   url: queryURL,
