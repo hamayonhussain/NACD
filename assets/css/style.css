@@ -1,18 +1,13 @@
-.navbar-brand{
 
-   margin-bottom: 25px;
-   margin: 45px;
-    
-}
 
-.container-fluid-one{
+.container-fluid-one {
 
     margin: 50px;
     text-align: center;
-    
+
 }
 
-.container-fluid-two{
+.container-fluid-two {
 
     margin: 50px;
     text-align: center;
@@ -29,7 +24,7 @@
 }
 
 
-.container-fluid-four{
+.container-fluid-four {
 
     margin: 50px;
     text-align: center;
@@ -37,7 +32,7 @@
     padding: 50px;
 }
 
-.googlemaps{
+.googlemaps {
     margin: 25px;
     text-align: center;
     margin-top: 25px;
@@ -45,26 +40,57 @@
 }
 
 .form {
-    margin: 25px;
+    
     text-align: center;
+    margin: 50px;
     margin-top: 25px;
-    padding: 25px;
+    padding: 15px;;
+    
 }
 
 
-.container .card{
 
-    
-    width:200px;
-    height:200px;
+.container .card {
+
+
+    width: 200px;
+    height: 200px;
 }
 
 footer {
-
-    margin-top: 275px;
+    
+    margin-top: 200px;
+    padding: 75px;
     
 }
 
+body {
+
+    background-image: url("../images/close.jpg"), linear-gradient(to bottom, #b2bec3 0%, #2d3436 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: hard-light;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Averia Serif Libre';
+}
 
 
+.lead {
+
+    border-style: solid;
+}
+
+.navbarcontainer {
+
+max-height: 5vh;
+height: 5vh;
+
+}
+
+.submit {
+
+    padding: 25px;
+    margin-top: 25px;
+}
 
