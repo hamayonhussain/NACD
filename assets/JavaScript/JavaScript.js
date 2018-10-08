@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-/*var stateChosen = */
-var queryURL = "https://api.usa.gov/crime/fbi/sapi/api/states/" + stateChosen + "?api_key=yymOL8SXIzpBwPuh92Fgp8vBqFAEhoHaVYVB3HHL";
-=======
 
 //This is the FBI API.
 
 var queryURL = "https://api.usa.gov/crime/fbi/sapi/api/agencies/byStateAbbr/TX?api_key=judX8VKcSFM3iuNPxRt4Z6oUUwIZ2f7OAII8D5wp";
 
->>>>>>> 40062fcc6d5f165f72f63292016c89270e241321
 $.ajax({
   url: queryURL,
   method: "GET"
