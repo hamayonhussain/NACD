@@ -1,38 +1,31 @@
 //This is the FBI API.
 
-var queryURL = "http://NflArrest.com/api/v1/crime";
+var queryURL = "http://NflArrest.com/api/v1";
 
 // ajax call
 
 $.ajax({
-  url: queryURL,
+  url: queryURL + "/crime",
   method: "GET"
-}).then(function (Response) {
-  console.log(Response);
-});
-
-var fbiObjects = [{
-  "ori": "TX0000000",
-  "agency_name": "Department of Public Safety",
-  "agency_type_name": "Other State Agency",
-  "state_name": "Texas",
-  "state_abbr": "TX",
-  "division_name": "West South Central",
-  "region_name": "South",
-  "region_desc": "Region III",
-  "county_name": "N/A",
-  "nibrs": false,
-  "latitude": 30.239513,
-  "longitude": -97.69127
-  }];
+ }).then(function (response) {
+   console.log(response);
+  // for loop: 1. declare and assign counter 2. compare counter 3. increment counter
+  for (var i = 0; i <= 5; i++) {
+    var nflCrimesCategory = response[i].Category
+    var nflArrestCounts = response[i].arrest_count
+    $(".top-crimes").append(nflCrimesCategory)
+    $(".top-crimes").append(nflArrestCounts )
+  }
+ 
+ });
 
       
 
-function checkCounty(fbiObject){
-   return fbiObject.county_name === "ARANSAS"
-};
+// function checkCounty(fbiObject){
+//    return fbiObject.county_name === "ARANSAS"
+// };
 
-const filteredSearch = fbiObjects.filter(checkCounty);
-console.log(filteredSearch);
+// const filteredSearch = fbiObjects.filter(checkCounty);
+// console.log(filteredSearch);
 
 
