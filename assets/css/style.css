@@ -372,15 +372,11 @@ p{
 .infocard {
 
 padding: 1em;
-margin: 0.5em;
+
 border: 2px solid rgb(117, 87, 87);
-margin: 5em 0;
+
+
+/* width: 33%; */
 
 }
 
-.cardcontainer{
-  
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
