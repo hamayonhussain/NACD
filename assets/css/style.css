@@ -302,9 +302,6 @@
 
 .container .card {
 
-
-  width: 200px;
-  height: 200px;
 }
 
 footer {
@@ -371,7 +368,7 @@ p{
 
 .infocard {
 
-padding: 1em;
+/* padding: 1em; */
 
 border: 2px solid rgb(117, 87, 87);
 
