@@ -37,4 +37,4 @@ function initMap() {
       'elementType': 'geometry',
       'stylers': [{'visibility': 'on'}, {'hue': '#5f94ff'}, {'lightness': 60}]
     }];
-  }
+  }0
