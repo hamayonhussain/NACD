@@ -1,6 +1,6 @@
 //This is the NFL Arrests API.
 
-var queryURL = "http://NflArrest.com/api/v1";
+var queryURL = "https://NflArrest.com/api/v1";
 
 // ajax call for TOP Crimes commited by players.
 
@@ -19,7 +19,7 @@ $.ajax({
  
  });
 
- var queryURL = "http://NflArrest.com/api/v1";
+ var queryURL = "https://NflArrest.com/api/v1";
 
 // ajax call for TOP Players for arrests
 
@@ -38,7 +38,7 @@ $.ajax({
  
  });
 
- var queryURL = "http://NflArrest.com/api/v1";
+ var queryURL = "https://NflArrest.com/api/v1";
 
 // ajax call for TOP Positions
 
