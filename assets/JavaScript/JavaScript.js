@@ -128,3 +128,69 @@ $.ajax({
 // End of menu //
 
 
+////Add Google Map
+
+var map;
+function initMap() {
+  var mapOptions = {
+      center: {lat: 51.5048835, lng: 0.1101221},
+       zoom: 12   
+  };
+  
+  var markers = [
+      {lat: 36.166461, lng:  -86.166461},
+      {lat: 40.812194, lng: -74.076983},
+      {lat: 40.446786, lng: -80.015761},
+      {lat: 35.225808, lng:  -80.852861},
+      {lat: 39.277969, lng: -76.622767},
+      {lat: 27.975967, lng: -82.50335},
+      {lat: 39.760056, lng:  -86.163806},
+      {lat: 44.973881, lng: -93.258094},
+      {lat: 33.5277, lng: -112.262608},
+      {lat: 32.747778, lng:  -97.092778},
+      {lat: 33.757614, lng: -84.400972},
+      {lat: 40.812194, lng: -74.076983},
+      {lat: 39.743936, lng:  -105.020097},
+      {lat: 25.957919, lng: -80.238842},
+      {lat: 39.900775, lng: -75.167453},
+      {lat: 41.862306, lng:  -87.616672},
+      {lat: 42.090925, lng: -71.26435},
+      {lat: 38.907697, lng: -76.864517},
+      {lat: 44.501306, lng:  -88.062167},
+      {lat: 32.783117, lng: -117.119525},
+      {lat: 29.950931, lng: -90.081364},
+      {lat: 29.684781, lng:  -95.410956},
+      {lat: 42.773739, lng: -84.400972},
+      {lat: 37.713486, lng: -122.386256},
+      {lat: 30.323925, lng:  -81.637356},
+      {lat: 41.506022, lng: -81.699564},
+      {lat: 37.751411, lng: -122.200889},
+      {lat: 39.048914, lng:  -94.484039},
+      {lat: 38.632975, lng: -90.188547},
+      {lat: 47.595153, lng: -122.331625},
+      {lat: 39.095442, lng:  -84.516039},
+      {lat: 42.340156, lng:  -83.045808}
+              ];
+
+
+map = new google.maps.Map(document.getElementById('map'), mapOptions);
+addMarkers();
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+function addMarkers() {
+var bounds = new google.maps.LatLngBounds();
+
+for (var i = 0; i < markers.length; i++) {
+  var latLng = new google.maps.LatLng(markers[i].lat, markers[i].lng);
+  markers[i] = new google.maps.Marker({
+      position: latLng,
+      map: map,
+      title: 'NFL Crime Map'
+  });
+
+  bounds.extend(markers[i].getPosition());
+  map.fitBounds(bounds);
+  }
+  }   
+}
