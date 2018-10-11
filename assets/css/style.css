@@ -315,7 +315,7 @@ body {
   
   
 
-  background-image: url("../images/nfl3.jpg"), linear-gradient(to bottom, #b2bec3 0%, #2d3436 100%);
+  background-image: url("../Images/nfl3.jpg"), linear-gradient(to bottom, #b2bec3 0%, #2d3436 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-blend-mode: multiply;
