@@ -13,5 +13,5 @@ This APP has been for Football fans using the NFL arrests API to show different 
 
 ## GOOGLE MAPS
 
-WE have also implemented GOOGLE Maps to show Football Stadiums location throughout US. See if you can find your favorite Stadium.
+We have also implemented GOOGLE Maps to show Football Stadiums location throughout US. See if you can find your favorite Stadium.
 
