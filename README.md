@@ -7,7 +7,7 @@ Project: NFL Arrest Records.
 
 ![Alt Text](https://media.giphy.com/media/ofM4yiAivjgUo/giphy.gif)
 
-This APP has been for Football fans using the NFL arrests API to show different categories of crimes that are commited by NFL Players.
+This APP is for Football fans to see NFL arrests and to see different categories of crimes that are commited by NFL Players.
 
 ![Alt Text](https://media.giphy.com/media/l0Exl9psRODcQgaIM/giphy.gif)
 
